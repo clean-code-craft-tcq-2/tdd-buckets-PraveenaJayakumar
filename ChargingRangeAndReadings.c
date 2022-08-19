@@ -5,7 +5,7 @@
 char* ChargingRangeAndReadings(int* chargingCurrentSamples){
 	char *chargingCurrentRangeAndOccurences = (char*)malloc(100);
 	int maxValue, minValue;
-	size_t numberOfSamples, numberOfOccurences;
+	size_t numberOfSamples, numberOfOccurences ;
 
 	numberOfSamples = FindNumberOfSamples(chargingCurrentSamples);
 	minValue = FindMinChargingCurrentRange(chargingCurrentSamples, numberOfSamples);
